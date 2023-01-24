@@ -1,0 +1,27 @@
+section {
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    background-color: #013c57;
+    color: white;
+    align-items: center;
+}
+
+.logo-text {
+    margin: 0;
+    padding: .55rem 2rem;
+}
+
+.nav-container ul {
+    display: flex;
+    gap: 3rem;
+    padding: .55rem 2rem;
+}
+
+.nav-container ul li {
+    list-style: none;
+    cursor: pointer;
+    transition: all .6s;
+    font-size: 1.15rem;
+}

@@ -1,0 +1,19 @@
+section{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    height: 40vh;
+    justify-content: center;
+    background-color: #0f12206c;
+    gap: 1rem;
+    width: 30vw;
+    align-items: center;
+}
+
+h2{
+    letter-spacing: .25rem;
+}
+
+h2, p, h3{
+    margin: 0;
+}

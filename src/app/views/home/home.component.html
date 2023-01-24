@@ -1,0 +1,13 @@
+<app-navigation [sesion]="textComponent" (click)="logout()"></app-navigation>
+<section>
+    <h2>Hola {{nombre}}</h2>
+    <p>Has iniciado sesion en Angular</p>
+    
+    <div>
+        <hr>
+        <h3>Usuario Registrado</h3>
+        <ul>
+            <li>{{usuario}} ({{nombre | lowercase}})</li>
+        </ul>
+    </div>
+</section>

@@ -1,0 +1,12 @@
+<section>
+    <h3 routerLink="home" class="logo-text">Activity #21</h3>
+    <nav class="nav-container">
+        <ul *ngIf="title != ''">
+            <li [routerLink]="[return]" >{{title}}</li>
+        </ul>
+        <ul *ngIf="sesion != ''">
+            <li>{{sesion}}</li>
+        </ul>
+
+    </nav>
+</section>

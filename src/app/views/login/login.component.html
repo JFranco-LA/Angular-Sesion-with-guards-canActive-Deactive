@@ -1,0 +1,35 @@
+<app-navigation [title]="textLogin" [return]="redirect"></app-navigation>
+<section class="wrapper">
+    <article class="body-login">
+
+        <figure class="icon-login__container">
+            <img src="../../../assets/images/login.png" alt="login" class="icon-login">
+        </figure>
+
+        <h3>login user</h3>
+
+        <form class="formulario-login" [formGroup]="sesionUsuario" (ngSubmit)="loginAccount()">
+            <div class="inputBox">
+                <input type="text" required formControlName="username">
+                <span>Username:</span>
+                <p *ngIf="user.touched && user.errors?.['required']" class="error-text">El campo de username es
+                    requerido</p>
+            </div>
+
+            <div class="inputBox">
+                <input type="password" required formControlName="password">
+                <span>Password:</span>
+                <p *ngIf="pass.touched && pass.errors?.['required']" class="error-text">El campo de contraseña es
+                    requerido</p>
+            </div>
+            <div>
+                <button class="btn" type="submit" [disabled]="sesionUsuario.invalid">Iniciar Sesion</button>
+            </div>
+
+            <div class="other-options">
+                <p class="not-account">No tienes cuenta? <a>Registrarse</a></p>
+                <a>¿Olvidó su contraseña?</a>
+            </div>
+        </form>
+    </article>
+</section>
